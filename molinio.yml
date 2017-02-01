@@ -1,0 +1,4 @@
+commands:
+    - ls_users1: ["ls", "-al", "/users"]
+    - ls_users2: ["ls", "-al /users"]
+    - git: ["git", "--version"]
