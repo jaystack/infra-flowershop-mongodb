@@ -1,4 +1,3 @@
 commands:
-    - ls_users1: ["ls", "-al", "/users"]
-    - ls_users2: ["ls", "-al /users"]
-    - git: ["git", "--version"]
+    - import_categories: ["mongoimport", "-d", "flowershop", "-c", "categories",  "--jsonArray",  "./data/categories.json"]
+    - import_flowers: ["mongoimport", "-d", "flowershop", "-c", "flowers",  "--jsonArray",  "./data/flowers.json"]
